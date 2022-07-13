@@ -18,6 +18,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import PageObject.AddNewCustomerPage;
+import PageObject.Dashboard;
 import PageObject.LoginPage;
 import PageObject.SearchCustomerPage;
 import Utitlities.ReadConfig;
@@ -63,10 +64,9 @@ public class StepDef extends BaseClass {
 		default:
 			driver = null;
 			break;
-
 		}
 
-	
+	driver.manage().window().maximize();
 		log.fatal("Setup1 executed...");
 
 
@@ -88,7 +88,7 @@ public class StepDef extends BaseClass {
 		loginPg= new LoginPage(driver);
 		addNewCustPg = new AddNewCustomerPage(driver);
 		SearchCustPg = new SearchCustomerPage(driver);
-
+		dash1 = new Dashboard(driver);
 		log.info("chrome browser launched");
 	}
 
@@ -393,4 +393,40 @@ public class StepDef extends BaseClass {
 	}*/
 
 
+	 @Given("User should be able to see all the common statistics keyword")
+	    public void user_should_be_able_to_see_all_the_common_statistics_keyword() throws Throwable {
+	       dash1.verifystaticsoption();
+	       log.info("Common statistics text present");
+	    }
+
+	    @When("All the grid should be visible")
+	    public void all_the_grid_should_be_visible() throws Throwable {
+	        dash1.verifystaticstiles();
+	        log.info("Common statistics tiles present");
+	    }
+
+	    @Given("^User should be able to see all the Order option$")
+	    public void user_should_be_able_to_see_all_the_order_option() throws Throwable {
+	           dash1.verifyorderoption();
+	           log.info("ORDER text present");
+	    }
+
+	    @When("^User click on the expand button order graph will be display$")
+	    public void user_click_on_the_expand_button_order_graph_will_be_display() throws Throwable {
+	           dash1.verifyordergraph();
+	           log.info("Orders Graph present");
+	    }
+	    
+	    @Given("^User should be able to see all the Incomplete order option$")
+	    public void user_should_be_able_to_see_all_the_incomplete_order_option() throws Throwable {
+	      
+	    }
+
+	    @When("^User click on the expand button and all total will be added$")
+	    public void user_click_on_the_expand_button_and_all_total_will_be_added() throws Throwable {
+	           dash1.Totalincompleteordervalue();
+	           log.info("Total incomplete order value added");
+	    }
+	
+	
 }
