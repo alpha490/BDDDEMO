@@ -145,6 +145,8 @@
 					<version>3.0.0-M7</version>
 					<configuration>
 						<testFailureIgnore>true</testFailureIgnore>
+						<parallel>methods</parallel>
+						<useUnlimitedThreads>true</useUnlimitedThreads>
 						<includes>
 							<include>**/*Run.java</include>
 						</includes>

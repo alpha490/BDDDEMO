@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.Run
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 173.017 s <<< FAILURE! - in TestRunner.Run
+TestRunner.Run.runScenario["Incomplete order value calculate", "Common statistics verify"](6)  Time elapsed: 15.346 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "2,468.80"
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseFloat(Unknown Source)
+	at java.lang.Float.parseFloat(Unknown Source)
+	at PageObject.Dashboard.Totalincompleteordervalue(Dashboard.java:136)
+	at StepDefinition.StepDef.user_click_on_the_expand_button_and_all_total_will_be_added(StepDef.java:427)
+	at ✽.User click on the expand button and all total will be added(file:///C:/Users/suman/eclipse-workspace/SBDD_cucumber/./Features/Dashboard.feature:25)
+
+TestRunner.Run.runScenario["Successful Login with Valid Credentials", "Login"](7)  Time elapsed: 13.774 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="nav-link" href="/logout">...</a> is not clickable at point (1416, 28). Other element would receive the click: <div id="ajaxBusy" style="display: block;">...</div>
+  (Session info: chrome=104.0.5112.81)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'DESKTOP-CEPH6CU', ip: '192.168.84.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b72432d5b6dfb1424e0af508600e4965, clickElement {id=1a8e34a3-b583-4c73-b5f7-083ff11d77e7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\suman\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57676}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57676/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b72432d5b6dfb1424e0af508600e4965)] -> link text: Logout]
+Session ID: b72432d5b6dfb1424e0af508600e4965
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at sun.reflect.GeneratedMethodAccessor56.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy39.click(Unknown Source)
+	at PageObject.LoginPage.clickOnLogOutButton(LoginPage.java:52)
+	at StepDefinition.StepDef.user_click_on_log_out_link(StepDef.java:142)
+	at ✽.User click on Log out link(file:///C:/Users/suman/eclipse-workspace/SBDD_cucumber/./Features/LoginFeature.feature:10)
+

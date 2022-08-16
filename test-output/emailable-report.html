@@ -8,71 +8,25 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">304,235</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">161,557</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">TestRunner.Run</td><td><a href="#m0">runScenario</a></td><td rowspan="3">1657626734943</td><td rowspan="3">10064</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">TestRunner.Run</td><td><a href="#m3">runScenario</a></td><td rowspan="5">1657626660419</td><td rowspan="5">34739</td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestRunner.Run</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1659161773114</td><td rowspan="1">14255</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">TestRunner.Run</td><td><a href="#m1">runScenario</a></td><td rowspan="7">1659161695220</td><td rowspan="7">26943</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Incomplete order value calculate&quot;</td><td>&quot;Common statistics verify&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;2,468.80&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
-	at java.base/java.lang.Float.parseFloat(Float.java:461)
-	at PageObject.Dashboard.Totalincompleteordervalue(Dashboard.java:136)
+<h2>Default test</h2><h3 id="m0">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Incomplete order value calculate&quot;</td><td>&quot;Common statistics verify&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: begin 1, end 0, length 0
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3734)
+	at java.base/java.lang.String.substring(String.java:1903)
+	at java.base/java.lang.String.substring(String.java:1876)
+	at PageObject.Dashboard.Totalincompleteordervalue(Dashboard.java:135)
 	at StepDefinition.StepDef.user_click_on_the_expand_button_and_all_total_will_be_added(StepDef.java:427)
 	at ✽.User click on the expand button and all total will be added(file:///C:/Users/suman/eclipse-workspace/SBDD_cucumber/./Features/Dashboard.feature:25)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful Login with Valid Credentials DDT&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (1416, 28). Other element would receive the click: &lt;div id=&quot;ajaxBusy&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=103.0.5060.114)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;DESKTOP-CEPH6CU&apos;, ip: &apos;192.168.0.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6e6ebae5e5dbbd5da4d8d2ba567c245b, clickElement {id=52ab1150-0e98-468b-99f1-c5de65c819c4}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\suman\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61002}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61002/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (6e6ebae5e5dbbd5da4d8d2ba567c245b)] -&gt; link text: Logout]
-Session ID: 6e6ebae5e5dbbd5da4d8d2ba567c245b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy42.click(Unknown Source)
-	at PageObject.LoginPage.clickOnLogOutButton(LoginPage.java:52)
-	at StepDefinition.StepDef.user_click_on_log_out_link(StepDef.java:142)
-	at ✽.User click on Log out link(file:///C:/Users/suman/eclipse-workspace/SBDD_cucumber/./Features/LoginFeature.feature:21)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful Login with Valid Credentials&quot;</td><td>&quot;Login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (1416, 28). Other element would receive the click: &lt;div id=&quot;ajaxBusy&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=103.0.5060.114)
-Build info: version: &apos;4.2.1&apos;, revision: &apos;ac4d0fdd4a&apos;
-System info: host: &apos;DESKTOP-CEPH6CU&apos;, ip: &apos;192.168.0.244&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [baa324296e40becc9d6ef97b979bfa06, clickElement {id=e28b57c7-7d3e-4c84-8693-6fa6181fc24f}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\suman\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60738}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60738/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (baa324296e40becc9d6ef97b979bfa06)] -&gt; link text: Logout]
-Session ID: baa324296e40becc9d6ef97b979bfa06
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy42.click(Unknown Source)
-	at PageObject.LoginPage.clickOnLogOutButton(LoginPage.java:52)
-	at StepDefinition.StepDef.user_click_on_log_out_link(StepDef.java:142)
-	at ✽.User click on Log out link(file:///C:/Users/suman/eclipse-workspace/SBDD_cucumber/./Features/LoginFeature.feature:10)
-... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search Customer by Name&quot;</td><td>&quot;Customers&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search Customer by Email&quot;</td><td>&quot;Customers&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search Customer by Name&quot;</td><td>&quot;Customers&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Add New Customer&quot;</td><td>&quot;Customers&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Common statistic should be visible&quot;</td><td>&quot;Common statistics verify&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search Customer by Email&quot;</td><td>&quot;Customers&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Order statistic should be visible&quot;</td><td>&quot;Common statistics verify&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Add New Customer&quot;</td><td>&quot;Customers&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Order statistic should be visible&quot;</td><td>&quot;Common statistics verify&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful Login with Valid Credentials&quot;</td><td>&quot;Login&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestRunner.Run#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful Login with Valid Credentials DDT&quot;</td><td>&quot;Login&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
